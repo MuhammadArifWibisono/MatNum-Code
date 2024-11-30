@@ -7,7 +7,9 @@ linshoot: File fungsi matlab berisi metode shooting linier
 
 Main: File livescript matlab berisi contoh soal (belum contoh dunia nyata)
 
-Main2: File script matlab berisi copy dari kode di Main
+Mainfinitediff: File script matlab berisi contoh penggunaan metode beda hingga menggunakan contoh soal di Main
+
+Mainlinshoot: File script matlab berisi contoh penggunaan metode shooting linier menggunakan contoh soal di Main
 
 Notes:
 
