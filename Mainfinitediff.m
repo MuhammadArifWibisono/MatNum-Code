@@ -1,13 +1,13 @@
 % Contoh Soal
-a = 0;
-b = 1;
-n = 10;
+a = 0; % Batas bawah t
+b = 1; % Batas atas t
+n = 10;% Banyaknya partisi
 % x(t) = t^2
 p = @(t) t;
 q = @(t) -2;
 r = @(t) 2;
-xa = 0;
-xb = 1;
+xa = 0; % Nilai x(a)
+xb = 1; % Nilai x(b)
 % Metode Beda Hingga
 X = finitediff(a,b,n,p,q,r,xa,xb);% Disini nilai x(i_t) berada di X(i+1)
 T = linspace(a,b,n+1);
