@@ -20,11 +20,11 @@ function X = linshoot(a,b,n,p,q,r,xa,xb)
         U2(j) = p(a+h*(j-1))*U1(1) + q(a+h*(j-1))*U(1) + r(a+h*(j-1));
     end
     % Mencari solusi dari v(t)
-    V2(1) = p(a)*V1(1) + q(a)*V(1) + r(a);
+    V2(1) = p(a)*V1(1) + q(a)*V(1);
     for j = 2:1:(n+1)
         V(j) = V(j-1) + h*V1(j-1);
         V1(j) = V1(j-1) + h*V2(j-1);
-        V2(j) = p(a+h*(j-1))*V1(1) + q(a+h*(j-1))*V(1) + r(a+h*(j-1));
+        V2(j) = p(a+h*(j-1))*V1(j) + q(a+h*(j-1))*V(j);
     end
     % Mencari solusi dari x(t)
     for j = 1:1:(n+1)
