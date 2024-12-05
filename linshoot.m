@@ -17,7 +17,7 @@ function X = linshoot(a,b,n,p,q,r,xa,xb)
     for j = 2:1:(n+1)
         U(j) = U(j-1) + h*U1(j-1);
         U1(j) = U1(j-1) + h*U2(j-1);
-        U2(j) = p(a+h*(j-1))*U1(1) + q(a+h*(j-1))*U(1) + r(a+h*(j-1));
+        U2(j) = p(a+h*(j-1))*U1(j) + q(a+h*(j-1))*U(j) + r(a+h*(j-1));
     end
     % Mencari solusi dari v(t)
     V2(1) = p(a)*V1(1) + q(a)*V(1);
